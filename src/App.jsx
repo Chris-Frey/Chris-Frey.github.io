@@ -4,7 +4,7 @@ import './App-mobile.css'
 
 const App = () => {
   return(
-  <>
+    <>
 
       <div className='body'>
         <section className="pageLeft">
@@ -65,21 +65,55 @@ const App = () => {
                 <li className='listItem'>Amphibious Assault Vehicle Crew Chief responsible for the safety and welfare of over 30 people in combat environments.</li>
               </ul>
             </section>
+
+
+            <h3>Education</h3>
+            <section className="experienceDescription1">
+              <div className="titleGroup">
+                <p className="experienceDate">2011 - 2015</p>
+                <div className="jobRole">
+                  <p className="title"><strong>Landscape Architecture</strong></p>
+                  <p className="company">Penn State University</p>
+                </div>
+               </div>
+              <ul className="role-description">
+
+                <li className='listItem'>Focused non-program classes on outside perspectives and critical thinking, including learning basic Mandarin, South-east Asian history, and the science and economics of poverty.</li>
+
+                <li className='listItem'>Multi-month summer study abroad program in Tanzania working with locals to create data records of, and improvements to, living, geographic, and environmental conditions</li>
+              </ul>
             </section>
 
+            <section className="experienceDescription1">
+              <div className="titleGroup">
+                <p className="experienceDate">2015 - 2015</p>
+                <div className="jobRole">
+                  <p className="title"><strong>Urban Design</strong></p>
+                  <p className="company">University of Melbourne, AU</p>
+                </div>
+               </div>
+              <ul className="role-description">
 
-    <section className="pageRight">
-      <h3 className="projects">PROJECTS</h3>
-      <p>Project 1</p>
-      <img className="projectPic" src="https://picsum.photos/400/200" />
-      <p>Project 2</p>
-      <img className="projectPic" src="https://picsum.photos/400/200" />
-      <p>Project 3</p>
-      <img className="projectPic" src="https://picsum.photos/400/200" />
+                <li className='listItem'>Semester abroad focusing on urban infrastructure an design, as it relates to human needs and interactions.</li>
 
-    </section>
-    </div>
-  </>
+                <li className='listItem'>Used Geographic information systems (GIS) to map accessibility of public transit, and design provide actionable recommendations to local government officials to improve service for users.</li>
+
+              </ul>
+            </section>
+        </section>
+
+        <section className="pageRight">
+          <h3 className="projects">PROJECTS</h3>
+          <p>Project 1</p>
+          <img className="projectPic" src="https://picsum.photos/400/200" />
+          <p>Project 2</p>
+          <img className="projectPic" src="https://picsum.photos/400/200" />
+          <p>Project 3</p>
+          <img className="projectPic" src="https://picsum.photos/400/200" />
+
+        </section>
+      </div>
+    </>
   )
 }
 export default App
