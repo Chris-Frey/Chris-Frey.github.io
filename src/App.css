@@ -23,7 +23,7 @@
   text-decoration: none;
 }
 
-body {
+.body {
   min-height: 100vh;
   max-width: 1000px;
   display: flex;
@@ -32,7 +32,7 @@ body {
 }
 
 .pageRight {
-  margin-top: 200px;
+  margin-top: 190px;
   /* margin-left: 20px; */
   min-width: 30%;
   /* max-width: 40%; */
@@ -41,21 +41,18 @@ body {
 
 .projects {
   color: var(--text-color-gold);
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  margin-top: 0;
 
 }
 
 .projectPic {
   width: 200px;
   margin: 20px;
-  padding-top: 60px;
+  margin-top: 0px;
+  padding-top: 10px;
   /* border:1px solid white; */
 }
-
-/* .pageLeft {
-  width: auto ;
-  max-width: 1000%;
-} */
 
 
 .contact {
@@ -93,8 +90,9 @@ h1 {
 }
 
 h3 {
-  color: var(--text-color-white);
+  color: var(--text-color-gold);
   margin: 20px;
+  margin-bottom: 10px;
 }
 
 h5 {
@@ -105,17 +103,21 @@ h5 {
 p {
   color: var(--text-color-fade);
   margin-left: 20px;
+  text-justify: inter-word;
+  margin-top: 10px;
 }
 
 .listItem {
   margin-left: 40px;
-  max-width: 500px;
+  max-width: 600px;
+  color: var(--text-color-white);
 }
 
 .aboutMe {
 display: flex;
 flex-direction: column;
 max-width: 600px;
+text-justify: inter-word;
 }
 
 .word_highlight {
@@ -128,6 +130,7 @@ max-width: 600px;
   position: relative;
   min-width: 150px;
   margin-top: 4px;
+  margin-left: 250px;
 }
 
 .experienceDescription1 {
@@ -143,15 +146,17 @@ max-width: 600px;
 }
 
 .role-description {
-  display: flex;
+  /* display: flex; */
   justify-content: left;
   min-width: 400px;
+  max-width: 600px;
   margin-top: 10px;
 }
 
 .title {
-  font-size: 1.25rem;
-  color: var(--text-color-white);
+  font-size: 1rem;
+  color: var(--text-color-blue);
+  min-width: 200px;
 }
 
 .titleGroup {
