@@ -12,11 +12,11 @@ const App = () => {
           <h3>Web Developer and Software Engineer</h3>
           <h5>I build things for people, and the web.</h5>
 
-          <ul className="contact">
+          {/* <ul className="contact">
             <li><a href="mailto:chris.frey@hey.com" className="fa fa-at" style="color: #49ace9;"></a></li>
             <li><a href="https://github.com/Chris-Frey" target="_blank" className="fa fa-github" style="color: #49ace9;"></a></li>
             <li><a href="https://www.linkedin.com/in/chris-l-frey/" target="_blank" className="fa fa-linkedin" style="color: #49ace9;"></a></li>
-          </ul>
+          </ul> */}
 
           <h3>About Me</h3>
           <div className='aboutMe'>
