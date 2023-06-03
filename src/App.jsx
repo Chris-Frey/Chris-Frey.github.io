@@ -1,22 +1,31 @@
-import React, { useState } from 'react'
 import './App.css'
 import './App-mobile.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+
 
 const App = () => {
+  const envelope = <FontAwesomeIcon icon={faEnvelope} />
+  const linkedIn = <FontAwesomeIcon icon={faLinkedin} />
+  const git = <FontAwesomeIcon icon={faGithub} />
+
   return(
     <>
-
       <div className='body'>
         <section className="pageLeft">
           <h1>Chris Frey</h1>
           <h3>Web Developer and Software Engineer</h3>
           <h5>I build things for people, and the web.</h5>
 
-          {/* <ul className="contact">
-            <li><a href="mailto:chris.frey@hey.com" className="fa fa-at" style="color: #49ace9;"></a></li> */}
-            {/* <li><a href="https://github.com/Chris-Frey" target="_blank" className="fa fa-github" style="color: #49ace9;"></a></li> */}
-            {/* <li><a href="https://www.linkedin.com/in/chris-l-frey/" target="_blank" className="fa fa-linkedin" style="color: #49ace9;"></a></li> */}
-          {/* </ul> */}
+          <ul className="contact">
+            <li><a className="button" href="mailto:chris.frey@hey.com">{envelope}</a></li>
+            <li><a className="button" href="https://www.linkedin.com/in/chris-l-frey/" target='_blank'>{linkedIn}</a></li>
+            <li><a className="button" href="https://github.com/Chris-Frey" target='_blank'>{git}</a></li>
+            <li><a className="button" href="">Projects</a></li>
+          </ul>
 
           <h3>About Me</h3>
           <div className='aboutMe'>
@@ -42,7 +51,7 @@ const App = () => {
                </div>
               <ul className="role-description">
 
-                <li className='listItem'>Responsible for the financial stability and success for over 20 colleagues, including senior partners, overseeing tens of millions of dollars of income. Mentored colleagues on financial practices to improve performance both internally, and with clients.</li>
+                <li className='listItem'>Responsible for the financial stability and success for over 20 colleagues, including senior partners, overseeing tens of millions of dollars of income.</li>
 
                 <li className='listItem'>Mentored colleagues on financial practices to improve performance both internally, and with clients.</li>
 
@@ -62,7 +71,7 @@ const App = () => {
 
                 <li className='listItem'>Served as a Marine Security Guard Detachment Commander. Senior military official in multiple countries charged with protecting classified information and American Embassies. </li>
 
-                <li className='listItem'>Amphibious Assault Vehicle Crew Chief responsible for the safety and welfare of over 30 people in combat environments.</li>
+                <li className='listItem'>Amphibious Assault Vehicle Crew Chief responsible for the safety, logistics, and welfare of over 30 people in combat environments.</li>
               </ul>
             </section>
 
