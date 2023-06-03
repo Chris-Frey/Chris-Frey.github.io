@@ -1,42 +1,171 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@media screen and (min-width:501px) {
+
+:root {
+  font-family: 'Prompt';
+  --background-color: rgb(15 23 42);
+  --text-color-fade: rgb(187, 184, 184);
+  --text-color-white: #e2e8f0;
+  --text-color-pink: #ff5792;
+  --text-color-orange: rgb(255, 184, 54);
+  --text-color-blue: #49ace9;
+  --text-color-gold: #d5971a;
+  --text-color-green: #49e9a6;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid white; */
+  text-decoration: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  min-height: 100vh;
+  max-width: 1000px;
+  display: flex;
+  margin: 10px;
+  background-color: var(--background-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.pageRight {
+  margin-top: 200px;
+  /* margin-left: 20px; */
+  min-width: 30%;
+  /* max-width: 40%; */
+  border-left: 1px solid var(--text-color-fade);
 }
 
-.card {
-  padding: 2em;
+.projects {
+  color: var(--text-color-gold);
+  font-size: 1.5rem;
+
 }
 
-.read-the-docs {
-  color: #888;
+.projectPic {
+  width: 200px;
+  margin: 20px;
+  padding-top: 60px;
+  /* border:1px solid white; */
+}
+
+/* .pageLeft {
+  width: auto ;
+  max-width: 1000%;
+} */
+
+
+.contact {
+  font-size: 30px;
+  display: flex;
+  align-content: left;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 100px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  border-radius: 1px;
+  color: var(--text-color-blue);
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 1000,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--text-color-pink);
+  margin: 20px;
+}
+
+h3 {
+  color: var(--text-color-white);
+  margin: 20px;
+}
+
+h5 {
+  color: var(--text-color-fade);
+  margin: 20px;
+}
+
+p {
+  color: var(--text-color-fade);
+  margin-left: 20px;
+}
+
+.listItem {
+  margin-left: 40px;
+  max-width: 500px;
+}
+
+.aboutMe {
+display: flex;
+flex-direction: column;
+max-width: 600px;
+}
+
+.word_highlight {
+  color: var(--text-color-blue);
+}
+
+.experienceDate {
+  display: box-flex;
+  float: inline-start;
+  position: relative;
+  min-width: 150px;
+  margin-top: 4px;
+}
+
+.experienceDescription1 {
+  /* display: flex; */
+  min-width: 1;
+  min-height: 200px;
+  justify-content: last baseline;
+}
+
+.jobRole {
+  display: flex;
+  flex-direction: column;
+}
+
+.role-description {
+  display: flex;
+  justify-content: left;
+  min-width: 400px;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--text-color-white);
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.company {
+  color: var(--text-color-fade);
+}
+
+.orange_highlight {
+  color: var(--text-color-orange);
+}
+
 }
