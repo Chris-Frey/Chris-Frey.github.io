@@ -14,12 +14,13 @@
   --text-color-blue: #49ace9;
   --text-color-gold: #d5971a;
   --text-color-green: #49e9a6;
+  --cursor: #cursor
 }
 
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   text-decoration: none;
   background-color: var(--background-color);
 }
@@ -81,11 +82,34 @@
   'opsz' 48
 }
 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  /* 100% {
+    opacity: 1;
+  } */
+}
+
 h1 {
   font-size: 2rem;
   color: var(--text-color-pink);
   margin: 20px;
+  margin-right: 0;
 }
+
+
+
+h1 .blinky {
+  font-size: 3rem;
+  padding-right: 20px;
+  margin-left: 0;
+  display: inline-block;
+  color: var(--text-color-white);
+  animation: blink 1.5s linear infinite;
+}
+
+
 
 h3 {
   color: var(--text-color-gold);

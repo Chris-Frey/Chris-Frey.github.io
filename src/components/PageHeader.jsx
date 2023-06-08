@@ -8,10 +8,13 @@ const PageHeader = () => {
   const envelope = <FontAwesomeIcon icon={faEnvelope} />
   const linkedIn = <FontAwesomeIcon icon={faLinkedin} />
   const git = <FontAwesomeIcon icon={faGithub} />
+
+
   return(
     <>
     <div className='header' id='myHeader'>
-      <h1>Chris Frey</h1>
+      <h1>Chris Frey<h1 class="blinky" >|</h1>
+      </h1>
       <h3>Web Developer and Software Engineer</h3>
       <h5>I build things for people, and the web.</h5>
 

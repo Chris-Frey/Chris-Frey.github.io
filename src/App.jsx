@@ -1,18 +1,16 @@
 import './App.css'
 import './App-mobile.css'
 import PageHeader from './components/PageHeader.jsx'
+import PageRight from './components/PageRight.jsx'
 
 
 
 
 const App = () => {
 
-
   return(
     <>
     <PageHeader />
-
-
           <div className='body'>
         <section className="pageLeft">
 
@@ -99,17 +97,7 @@ const App = () => {
               </ul>
             </section>
         </section>
-
-        <section className="pageRight">
-          <h3 className="projects">PROJECTS</h3>
-          <p>Project 1</p>
-          <img className="projectPic" src="https://picsum.photos/400/200" />
-          <p>Project 2</p>
-          <img className="projectPic" src="https://picsum.photos/400/200" />
-          <p>Project 3</p>
-          <img className="projectPic" src="https://picsum.photos/400/200" />
-
-        </section>
+        <PageRight />
       </div>
     </>
   )
