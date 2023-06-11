@@ -90,7 +90,7 @@ const App = () => {
                </div>
               <ul className="role-description">
 
-                <li className='listItem'>Semester abroad focusing on urban infrastructure an design, as it relates to human needs and interactions.</li>
+                <li className='listItem'>Semester abroad focusing on urban infrastructure and design, as it relates to human needs and interactions.</li>
 
                 <li className='listItem'>Used Geographic information systems (GIS) to map accessibility of public transit, and design provide actionable recommendations to local government officials to improve service for users.</li>
 
