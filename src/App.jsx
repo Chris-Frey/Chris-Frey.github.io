@@ -1,16 +1,19 @@
+
 import './App.css'
 import './App-mobile.css'
 import PageHeader from './components/PageHeader.jsx'
 import PageRight from './components/PageRight.jsx'
+import Portal from './components/Portal.jsx'
 
 
 
 
 const App = () => {
 
-  return(
+  return (
     <>
     <PageHeader />
+    <Portal />
           <div className='body'>
         <section className="pageLeft">
 
