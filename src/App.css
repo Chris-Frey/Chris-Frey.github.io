@@ -6,17 +6,39 @@
 
 :root {
   font-family: 'Prompt';
-  --background-color: rgb(15 23 42);
-  --text-color-fade: rgb(187, 184, 184);
-  --text-color-white: #e2e8f0;
-  --text-color-pink: #ff5792;
-  --text-color-orange: rgb(255, 184, 54);
-  --text-color-blue: #49ace9;
-  --text-color-gold: #d5971a;
-  --text-color-green: #49e9a6;
-  --tile-background: rgb(41, 41, 75);
-  --neumorph-light: #bab1b0;
   --cursor: #cursor
+    /* Light Mode*********************** */
+    --background-color: #f7ecd3;
+    --text-color-fade: #252323;
+    --text-color-dark: #252323;
+    --text-color-pink: #E39774;
+    /* --text-color-pink: #f33078; */
+    --text-color-orange: #326273;
+    /* --text-color-orange: #fb6e44; */
+    --text-color-blue: #5C9EAD;
+    /* --tile-color-blue: #202849; */
+    --tile-color-light: var(--background);
+    /* --tile-color-light: #31363c; */
+    --text-color-gold: #326273;
+    /* --text-color-gold: #fb6e44; */
+    --text-color-green: #E39774;
+    /* --neumorph-light: #191e38; */
+
+    --border-radius: 15px;
+    /* --background: #f4f3ee;
+    --box-shadow:  5px 5px 10px #9d9d9d,
+    -5px -5px 10px #ffffff; */
+
+    /* DARK MODE COLORS */
+    --text-color-pink: #db974e;
+    --text-color-green: #78a2ba;
+    --text-color-blue: #78a2ba;
+    --text-color-fade: #d7b79e;
+    --text-color-dark: #d7b79e;
+    --text-color-gold: #db974e;
+    --background: #1f3c5a;
+    --box-shadow:  5px 5px 10px #14283b,
+                 -5px -5px 10px #2a5079;
 }
 
 * {
@@ -25,8 +47,7 @@
   padding: 0;
   /* border: 1px solid white; */
   text-decoration: none;
-  background-color: var(--background-color);
-  /* background-color: var(--neumorph-light); */
+  background-color: var(--background);
 }
 
 .modal {
@@ -68,10 +89,7 @@
 #portal {
   width: 400px;
   height: 400px;
-
 }
-
-
 
 .body {
   min-height: 100vh;
@@ -90,26 +108,31 @@
   position: fixed;
   left: 700px;
   top: 75px;
-
 }
 
-.projects {
-  color: var(--text-color-gold);
-  margin-top: 0;
 
-}
 
 .projectBody {
   max-width: 250px;
-  background-color: var(--tile-background);
-
+  background-color: var(--neumorph-light);
   border-radius: 15px;
-  filter: drop-shadow(0px 0px 0.2rem rgb(93, 92, 93));
-  /* background-color: var(--#e9e0e0);
-  border-radius: 10px;
-  background: #e9e0e0;
-  box-shadow:  23px 23px 46px #5d5a5a,
-  -23px -23px 46px #ffffff; */
+  /* filter: drop-shadow(0px 0px 0.2rem rgb(93, 92, 93)); */
+  background-color: var(--tile-color-light);
+  border-radius: var(--border-radius);
+  background: var(--tile-color-light);
+  box-shadow: var(--box-shadow);
+  margin-top: -15px;
+  padding-top: 20px;
+}
+.projectBody .projects {
+  color: var(--text-color-gold);
+  width: 250px;
+  padding-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  /* box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius); */
 }
 
 .projectPic {
@@ -117,9 +140,12 @@
   margin: 20px;
   margin-top: 0px;
   padding-top: 10px;
-  background-color: var(--tile-background);
+  background-color: var(--background);
 }
 
+.rightList {
+margin-left: 15px;
+}
 
 .contact {
   font-size: 20px;
@@ -140,14 +166,6 @@
   cursor: pointer;
 }
 
-/* .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 1000,
-  'GRAD' 0,
-  'opsz' 48
-} */
-
 h1 {
   font-size: 2rem;
   color: var(--text-color-pink);
@@ -166,15 +184,14 @@ h1 .blinky {
   padding-right: 20px;
   margin-left: 0;
   display: inline-block;
-  color: var(--text-color-white);
+  color: var(--text-color-dark);
   animation: blink 1.5s linear infinite;
 }
 
 h3 {
   color: var(--text-color-gold);
-  margin: 20px;
   margin-bottom: 5px;
-  margin-left: 30px;
+  margin-top: 15px;
 }
 
 .subHead {
@@ -189,16 +206,14 @@ h5 {
 
 p {
   color: var(--text-color-fade);
-  background-color: hwb(240 0% 0% / 0);
-  margin-left: 20px;
-  text-justify: inter-word;
+  background-color: transparent;
   margin-top: 10px;
 }
 
 .listItem {
   margin-left: 40px;
   max-width: 600px;
-  color: var(--text-color-white);
+  color: var(--text-color-dark);
   background-color: hwb(240 0% 0% / 0);
 }
 
@@ -206,20 +221,39 @@ ul {
   background-color: hwb(240 0% 0% / 0);
 }
 
+.aboutMeSection {
+  position: relative;
+  display: inline-block;
+  width: 650px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--tile-color-light);
+  border-radius: var(--border-radius);
+}
+
+.aboutMeTitle {
+  /* position: absolute;
+  top: 100px;
+  left: -15px;
+  margin-left: -20px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0; */
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
 .aboutMe {
-  display: flex;
-  flex-direction: column;
-  max-width: 641px;
-  text-justify: inter-word;
-  background-color: var(--tile-background);
-  /* border: 1px solid white; */
-  border-radius: 15px;
-  /* filter: drop-shadow(0px 0px 0.2rem rgb(93, 92, 93)); */
-  /* background-color: var(--#e9e0e0);
-  border-radius: 10px;
-  background: #e9e0e0;
-  box-shadow:  23px 23px 46px #5d5a5a,
-              -23px -23px 46px #ffffff; */
+  padding: 5px;
+  border-radius: var(--border-radius);
+  background: var(--tile-color-light);
+}
+
+.aboutMe h3{
+  position:absolute;
 }
 
 .word_highlight {
@@ -240,16 +274,17 @@ ul {
   min-width: 1;
   min-height: 200px;
   justify-content: last baseline;
-  background-color: var(--tile-background);
   /* border: 1px solid white; */
-  border-radius: 15px;
-  filter: drop-shadow(0px 0px 0.2rem rgb(93, 92, 93));
+  border-radius: var(--border-radius);
+  background: var(--tile-color-light);
+  box-shadow: var(--box-shadow);
+
 }
 
 .jobRole {
   display: flex;
   flex-direction: column;
-  background-color: hwb(240 0% 0% / 0);
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 .role-description {
@@ -265,14 +300,15 @@ ul {
   font-size: 1rem;
   color: var(--text-color-blue);
   min-width: 200px;
-  background-color: hwb(240 0% 0% / 0);
+  margin-left: 0px;
+  background-color: var(--tile-color-light);
 }
 
 .titleGroup {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  background-color: hwb(240 0% 0% / 0);
+  background-color: transparent;
 }
 
 .company {

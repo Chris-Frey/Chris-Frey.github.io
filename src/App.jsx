@@ -13,11 +13,13 @@ const App = () => {
   return (
     <>
     <PageHeader />
-    <Portal />
-          <div className='body'>
+    {/* <Portal /> */}
+      <div className='body'>
         <section className="pageLeft">
-
-          <h3>About Me</h3>
+          <div className='aboutMeSection'>
+            {/* <div className='titleAboutMe'> */}
+              <h3 className='aboutMeTitle'>About Me</h3>
+            {/* </div> */}
           <div className='aboutMe'>
             <p>Since I was a child I've been playing around with computers, and seeing what I could break. I took a detour through the <a className='word_highlight'>military</a>, and then got licensed the <a className='word_highlight'>Landscape Architecture</a> field, where I honed my leadership and critical thinking skills. I'm now knee deep in JavaScript, React, Ruby, and other technologies that affect how we use the world around us.</p>
 
@@ -25,18 +27,18 @@ const App = () => {
 
 
             <p>When I'm not living the code life, I spend time outdoors hiking,
-              camping, and sometimes learning to salsa. I also spend a lot of time with my 13 year old dog, Kaylee.
-            </p>
+              camping, and sometimes learning to salsa. I also spend a lot of time with my 13 year old dog, Kaylee.</p>
           </div>
+        </div>
 
 
-           <h3>Experience</h3>
             <section className="experienceDescription1">
+            <h3 className='aboutMeTitle'>Experience</h3>
               <div className="titleGroup">
                 <p className="experienceDate">2016 - 2022</p>
                 <div className="jobRole">
                   <p className="title"><strong>Landscape Architect</strong></p>
-                  <p className="company">Kimley-Horn</p>
+                  <p className="company"><strong>Kimley-Horn</strong></p>
                 </div>
                </div>
               <ul className="role-description">
@@ -47,14 +49,14 @@ const App = () => {
 
                 <li className='listItem'>Deliver well-crafted and detailed construction documents to public and private clients including Target, Amazon, JPMorgan-Chase, and Lifetime</li>
                 </ul>
-            </section>
+            {/* </section>
 
-            <section className="experienceDescription1">
+            <section className="experienceDescription1"> */}
               <div className="titleGroup">
                 <p className="experienceDate">2002 - 2010</p>
                 <div className="jobRole">
                   <p className="title"><strong>Marine Staff Sergeant</strong></p>
-                  <p className="company">US Marine Corps</p>
+                  <p className="company"><strong>US Marine Corps</strong></p>
                 </div>
                </div>
                <ul className="role-description">
@@ -66,13 +68,14 @@ const App = () => {
             </section>
 
 
-            <h3>Education</h3>
+
             <section className="experienceDescription1">
+            <h3 className='aboutMeTitle'>Education</h3>
               <div className="titleGroup">
                 <p className="experienceDate">2011 - 2015</p>
                 <div className="jobRole">
                   <p className="title"><strong>Landscape Architecture</strong></p>
-                  <p className="company">Penn State University</p>
+                  <p className="company"><strong>Penn State University</strong></p>
                 </div>
                </div>
               <ul className="role-description">
@@ -81,14 +84,14 @@ const App = () => {
 
                 <li className='listItem'>Multi-month summer study abroad program in Tanzania working with locals to create data records of, and improvements to, living, geographic, and environmental conditions</li>
               </ul>
-            </section>
+            {/* </section>
 
-            <section className="experienceDescription1">
+            <section className="experienceDescription1"> */}
               <div className="titleGroup">
                 <p className="experienceDate">2015 - 2015</p>
                 <div className="jobRole">
                   <p className="title"><strong>Urban Design</strong></p>
-                  <p className="company">University of Melbourne, AU</p>
+                  <p className="company"><strong>University of Melbourne, AU</strong></p>
                 </div>
                </div>
               <ul className="role-description">
