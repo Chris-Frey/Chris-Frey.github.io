@@ -21,9 +21,9 @@ const App = () => {
               <h3 className='aboutMeTitle'>About Me</h3>
             {/* </div> */}
           <div className='aboutMe'>
-            <p>Since I was a child I've been playing around with computers, and seeing what I could break. I took a detour through the <a className='word_highlight'>military</a>, and then got licensed the <a className='word_highlight'>Landscape Architecture</a> field, where I honed my leadership and critical thinking skills. I'm now knee deep in JavaScript, React, Ruby, and other technologies that affect how we use the world around us.</p>
+            <p>Since I was a child I've been playing around with computers, and seeing what I could break. I took a detour through the <a className='word_highlight'>military</a>, and then got licensed in the <a className='word_highlight'>Landscape Architecture</a> field, where I honed my leadership and critical thinking skills. I'm now knee deep in JavaScript, React, Ruby, and other technologies that affect how we use the world around us.</p>
 
-            <p>My main focus at the moment is absorbing everything I can about software development, and use that knowledge to progress and improve technology while <a className='word_highlight'>positively affecting people's lives</a>.</p>
+            <p>My main focus at the moment is absorbing everything I can about software development, and using that knowledge to progress and improve technology while <a className='word_highlight'>positively affecting people's lives</a>.</p>
 
 
             <p>When I'm not living the code life, I spend time outdoors hiking,
