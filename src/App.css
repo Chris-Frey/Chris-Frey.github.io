@@ -15,24 +15,18 @@
     --text-color-fade: #252323;
     --text-color-dark: #252323;
     --text-color-pink: #E39774;
-    /* --text-color-pink: #f33078; */
     --text-color-orange: #326273;
-    /* --text-color-orange: #fb6e44; */
     --text-color-blue: #5C9EAD;
-    /* --tile-color-blue: #202849; */
     --tile-color-light: var(--background);
-    /* --tile-color-light: #31363c; */
     --text-color-gold: #326273;
-    /* --text-color-gold: #fb6e44; */
     --text-color-green: #E39774;
-    /* --neumorph-light: #191e38; */
-
     --border-radius: 15px;
     --background: #f4f3ee;
     --box-shadow:  5px 5px 10px #9d9d9d,
     -5px -5px 10px #ffffff;
 
     /* DARK MODE COLORS */
+
     /* --text-color-pink: #db974e;
     --text-color-green: #78a2ba;
     --text-color-blue: #78a2ba;
@@ -42,6 +36,7 @@
     --background: #1f3c5a;
     --box-shadow:  5px 5px 10px #14283b,
                  -5px -5px 10px #2a5079; */
+
 }
 
 * {
