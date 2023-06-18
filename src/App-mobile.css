@@ -6,19 +6,28 @@
 
   :root {
     font-family: 'Prompt';
-    --background-color: rgb(15 23 42);
-    --text-color-fade: rgb(187, 184, 184);
-    --text-color-white: #e2e8f0;
-    --text-color-pink: #ff5792;
-    --text-color-orange: rgb(255, 184, 54);
-    --text-color-blue: #49ace9;
-    --text-color-gold: #d5971a;
-    --text-color-green: #49e9a6;
+    --background-color: #f7ecd3;
+    --text-color-fade: #252323;
+    --text-color-dark: #252323;
+    --text-color-pink: #E39774;
+    --text-color-orange: #326273;
+    --text-color-blue: #5C9EAD;
+    --tile-color-light: var(--background);
+    --text-color-gold: #326273;
+    --text-color-green: #E39774;
+    --border-radius: 15px;
+    --background: #f4f3ee;
+    --box-shadow:  5px 5px 10px #9d9d9d,
+    -5px -5px 10px #ffffff;
+    --border-radius: 15px;
+    --background: #f4f3ee;
+    --box-shadow:  5px 5px 10px #9d9d9d,
+    -5px -5px 10px #ffffff;
   }
 
   * {
     /* border: 1px solid white; */
-    background-color: rgb(15 23 42);
+    background-color: var(--background);
     text-decoration: none;
   }
 
@@ -45,35 +54,37 @@
     padding-right: 20px;
     margin-left: 0;
     display: inline-block;
-    color: var(--text-color-white);
+    color: var(--text-color-dark);
     animation: blink 1.5s linear infinite;
   }
 
   h3 {
-    color: var(--text-color-gold);
+    color: var(--text-color-pink);
     margin: 20px;
     margin-bottom: 0;
   }
 
   h5 {
-    color: var(--text-color-white);
+    color: var(--text-color-dark);
     margin: 20px;
     margin-top: 0;
   }
 
   p {
-    color: var(--text-color-fade);
+    color: var(--text-color-dark);
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  /* ul {
-    align-content: center;
-    justify-content: center;
-  } */
+  .aboutMeSection {
+    border-radius: var(--border-radius);
+    background: var(--tile-color-light);
+    box-shadow: var(--box-shadow);
+    margin: 5px;
+  }
 
   .word_highlight {
-    color: var(--text-color-green);
+    color: var(--text-color-blue);
   }
   .pageLeft{
     max-width: 100%;
@@ -132,7 +143,10 @@
     /* display: flex; */
     min-width: 1;
     justify-content: left;
-    color: var(--text-color-white);
+    color: var(--text-color-dark);
+    border-radius: var(--border-radius);
+    background: var(--tile-color-light);
+    box-shadow: var(--box-shadow);
   }
 
   .jobRole {
@@ -145,7 +159,7 @@
     /* display: flex; */
     min-width: 80%;
     margin-top: 5px;
-    color: var(--text-color-white);
+    color: var(--text-color-dark);
   }
 
   .title {
@@ -157,7 +171,7 @@
   }
 
   .company {
-    color: var(--text-color-fade);
+    color: var(--text-color-dark);
     margin: 0;
 
   }
@@ -167,7 +181,6 @@
   }
 
   .pageRight {
-    border-left: 0px solid black;
    margin: 10px;
     max-width: 100%;
   }
