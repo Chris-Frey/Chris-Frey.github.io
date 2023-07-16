@@ -27,7 +27,7 @@
 
     /* DARK MODE COLORS */
 
-    /* --text-color-pink: #db974e;
+    --text-color-pink: #db974e;
     --text-color-green: #78a2ba;
     --text-color-blue: #78a2ba;
     --text-color-fade: #d7b79e;
@@ -35,7 +35,7 @@
     --text-color-gold: #db974e;
     --background: #1f3c5a;
     --box-shadow:  5px 5px 10px #14283b,
-                 -5px -5px 10px #2a5079; */
+                 -5px -5px 10px #2a5079;
 
 }
 
@@ -145,6 +145,10 @@
 margin-left: 15px;
 }
 
+
+
+
+
 .contact {
   font-size: 20px;
   display: flex;
@@ -165,11 +169,21 @@ margin-left: 15px;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--text-color-pink);
   margin: 10px;
   margin-right: 0;
+  border-right: 5px;
+  border-color: var(--text-color-pink);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(40, end) forwards;
 }
+  @keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+  }
+
 
 @keyframes blink {
   50% {
@@ -181,6 +195,7 @@ h1 .blinky {
   font-size: 3rem;
   padding-right: 20px;
   margin-left: 0;
+  margin-bottom: 0;
   display: inline-block;
   color: var(--text-color-dark);
   animation: blink 1.5s linear infinite;
