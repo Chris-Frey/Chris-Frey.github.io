@@ -6,23 +6,34 @@
 
   :root {
     font-family: 'Prompt';
-    --background-color: #f7ecd3;
-    --text-color-fade: #252323;
-    --text-color-dark: #252323;
-    --text-color-pink: #E39774;
-    --text-color-orange: #326273;
-    --text-color-blue: #5C9EAD;
-    --tile-color-light: var(--background);
-    --text-color-gold: #326273;
-    --text-color-green: #E39774;
-    --border-radius: 15px;
-    --background: #f4f3ee;
-    --box-shadow:  5px 5px 10px #9d9d9d,
-    -5px -5px 10px #ffffff;
-    --border-radius: 15px;
-    --background: #f4f3ee;
-    --box-shadow:  5px 5px 10px #9d9d9d,
-    -5px -5px 10px #ffffff;
+    --cursor: #cursor
+      /* Light Mode*********************** */
+      --background-color: #f7ecd3;
+      --text-color-fade: #252323;
+      --text-color-dark: #252323;
+      --text-color-pink: #E39774;
+      --text-color-orange: #326273;
+      --text-color-blue: #5C9EAD;
+      --tile-color-light: var(--background);
+      --text-color-gold: #326273;
+      --text-color-green: #E39774;
+      --border-radius: 15px;
+      --background: #f4f3ee;
+      --box-shadow:  5px 5px 10px #9d9d9d,
+      -5px -5px 10px #ffffff;
+
+      /* DARK MODE COLORS */
+
+      --text-color-pink: #db974e;
+      --text-color-green: #78a2ba;
+      --text-color-blue: #78a2ba;
+      --text-color-fade: #d7b79e;
+      --text-color-dark: #d7b79e;
+      --text-color-gold: #db974e;
+      --background: #1f3c5a;
+      --box-shadow:  5px 5px 10px #14283b,
+                   -5px -5px 10px #2a5079;
+
   }
 
   * {

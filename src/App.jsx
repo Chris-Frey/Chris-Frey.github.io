@@ -33,7 +33,25 @@ const App = () => {
 
 
             <section className="experienceDescription1">
-            <h3 className='aboutMeTitle'>Experience</h3>
+              <h3 className='aboutMeTitle'>Experience</h3>
+              <div className="titleGroup">
+                <p className="experienceDate">2023 - Present</p>
+                <div className="jobRole">
+                  <p className="title"><strong>Full-Stack Developer Student</strong></p>
+                  <p className="company"><strong>LEARN Academy</strong></p>
+                </div>
+               </div>
+              <ul className="role-description">
+
+                <li className='listItem'>Performed 200+ hours of direct coding experience learning new languages and frameworks.</li>
+
+                <li className='listItem'>Enhanced communication and collaboration skills through pair programming to create full-stack applications.</li>
+
+                <li className='listItem'>Acquired working knowledge of Ruby, Javascript, HTML, CSS, and React by building full-stack applications.</li>
+
+                <li className='listItem'>Designed and created code for small applications through Test-driven development in Jest and Rspec.</li>
+
+                </ul>
               <div className="titleGroup">
                 <p className="experienceDate">2016 - 2022</p>
                 <div className="jobRole">
@@ -49,9 +67,7 @@ const App = () => {
 
                 <li className='listItem'>Deliver well-crafted and detailed construction documents to public and private clients including Target, Amazon, JPMorgan-Chase, and Lifetime</li>
                 </ul>
-            {/* </section>
 
-            <section className="experienceDescription1"> */}
               <div className="titleGroup">
                 <p className="experienceDate">2002 - 2010</p>
                 <div className="jobRole">
@@ -103,7 +119,7 @@ const App = () => {
               </ul>
             </section>
         </section>
-        <PageRight />
+        {/* <PageRight /> */}
       </div>
     </>
   )
